@@ -22,7 +22,7 @@ const About = () => {
                         core engineering principles, shaping innovative solutions.
                     </p>
 
-                    <div className="about-background-info-skill">
+                    <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
                             <i class="fa-solid fa-bolt"></i>
                         </div>
@@ -30,19 +30,19 @@ const About = () => {
 
                     </div>
 
-                    <div className="about-background-info-skill">
+                    <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
                             <i class="fa-solid fa-dna"></i>
                         </div>
                         <div className="skill-description">End-to-End Biomedical Device Creation</div>
                     </div>
-                    <div className="about-background-info-skill">
+                    <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
                             <i class="fa-solid fa-robot"></i>
                         </div>
                         <div className="skill-description">Machine Learning Pipeline and Deployment</div>
                     </div>
-                    <div className="about-background-info-skill">
+                    <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
                             <i class="fa-solid fa-diagram-project"></i>
                         </div>
