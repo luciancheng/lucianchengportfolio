@@ -2,8 +2,8 @@ import TechstackSection from "./techstackSection";
 
 const About = () => {
     const techstack = [
-        {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js"]},
-        {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "aws", "figma", "git", "github", "gitlab", "vscode"]}
+        {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js"], id: 1},
+        {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "aws", "figma", "git", "github", "gitlab", "vscode"], id: 2}
     ];
     return ( 
         <div className="about" id="about">
@@ -24,7 +24,7 @@ const About = () => {
 
                     <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
-                            <i class="fa-solid fa-bolt"></i>
+                            <i className="fa-solid fa-bolt"></i>
                         </div>
                         <div className="skill-description">Embedded Systems Development and Design</div>
 
@@ -32,19 +32,19 @@ const About = () => {
 
                     <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
-                            <i class="fa-solid fa-dna"></i>
+                            <i className="fa-solid fa-dna"></i>
                         </div>
                         <div className="skill-description">End-to-End Biomedical Device Creation</div>
                     </div>
                     <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
-                            <i class="fa-solid fa-robot"></i>
+                            <i className="fa-solid fa-robot"></i>
                         </div>
                         <div className="skill-description">Machine Learning Pipeline and Deployment</div>
                     </div>
                     <div className="about-background-info-skill frosted-glass">
                         <div className="skill-image">
-                            <i class="fa-solid fa-diagram-project"></i>
+                            <i className="fa-solid fa-diagram-project"></i>
                         </div>
                         <div className="skill-description">Full-stack Application Development</div>
                     </div>
@@ -54,7 +54,7 @@ const About = () => {
                 <h3>My Tech Stack</h3>
                 <div className="techstack-section-container">
                     {techstack.map((tech) => (
-                        <TechstackSection techstack={tech}/>
+                        <TechstackSection techstack={tech} key={tech.id}/>
                     ))}
                 </div>
             </div>
