@@ -14,13 +14,14 @@ const Contact = () => {
         event.preventDefault();
 
         const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzYV1F5q8NwcK5Fk_5DA07vimOmTtlENwFno5j6ZL6H94fdLnGRBF5ovQ4z2MgwBIX0/exec";
+        "https://script.google.com/macros/s/AKfycbwSrqXwr3T8VkQvaPwbHK_O-IncIc4e0NzW8S6mwu95WAKCPNgRBFQALqyJE1dkFq5ntw/exec";
         const form = document.forms["submit-to-google-sheet"];
 
-        event.preventDefault();
-        fetch(scriptURL, { method: "POST", body: inputs})
-        .then((response) => {console.log("Success!", response)})
-        .catch((error) => console.error("Error!", error.message));
+        const formattedForm = new FormData(form);
+
+        fetch(scriptURL, { method: 'POST', body: formattedForm})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message));
 
         form.reset();
     }

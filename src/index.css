@@ -663,6 +663,57 @@ form button:hover {
   cursor: pointer;
 }
 
+/* footer */
+
+.footer {
+  margin: 12% auto 0;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+.footer-title h3 {
+  margin: 0 0 10px;
+  font-size: 25px;
+}
+
+.footer-title p {
+  color: var(--preHover);
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.footer-social-links {
+  margin: 30px 0 0;
+}
+
+.footer-nav {
+  margin-left: 300px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--preHover);
+  transition: var(--transitionTime);
+  font-size: 17px;
+}
+
+.footer-links a:hover {
+  color: var(--textColor);
+}
+
+.footer-links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 
@@ -694,4 +745,23 @@ form button:hover {
     left: 11px;
   }
 
+}
+
+@media screen and (max-width: 1700px) {
+
+  .intro .profile-picture {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-div .about-image {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .App {
+    max-width: 90%;
+  }
 }
