@@ -181,6 +181,7 @@ body {
 
 .intro-background {
   animation: 4s 0s 1 slideInFromLeft;
+  text-align: center;
   margin: 15px 0;
   font-size: 30px;
   color: var(--preHover);
@@ -573,6 +574,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
 }
 
 .conact-socials-container {
@@ -745,6 +747,11 @@ form button:hover {
 
   .left-container .dot, .right-container .dot {
     left: 11px;
+  }
+
+  .intro .intro-greeting {
+    font-size: 60px;
+    --typeWriterWidth: 440px;
   }
 
 }
