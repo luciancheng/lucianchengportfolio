@@ -758,7 +758,7 @@ form button:hover {
 
   .intro .intro-greeting {
     font-size: 70px;
-    --typeWriterWidth: 490px;
+    --typeWriterWidth: 480px;
   }
 
   .about-div .about-image {
