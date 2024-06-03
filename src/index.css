@@ -7,6 +7,7 @@
  --textColor: #ffffff;
  --transitionTime: 0.2s;
  --textColor2: #ffffffc9;
+ --typeWriterWidth: 670px;
 }
 
 * {
@@ -166,7 +167,7 @@ body {
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 670px;}
+  to{width: var(--typeWriterWidth);}
 }
 @keyframes blinkTextCursor{
   0%{border-right-color: rgba(255,255,255,.75);}
@@ -667,7 +668,7 @@ form button:hover {
 /* footer */
 
 .footer {
-  margin: 12% auto 0;
+  margin: 12% auto 4%;
   padding: 20px;
 }
 
@@ -751,13 +752,21 @@ form button:hover {
 @media screen and (max-width: 1700px) {
 
   .intro .profile-picture {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .intro .intro-greeting {
+    font-size: 70px;
+    --typeWriterWidth: 490px;
   }
 
   .about-div .about-image {
     width: 300px;
     height: 200px;
+  }
+  .intro .intro-section {
+    flex-basis: 600px;
   }
 }
 
