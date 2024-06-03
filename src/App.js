@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
         <div className="background-div"></div>
-        <div className="circle circle-1"></div>
         <Navbar/>
         <Intro/>
         <About/>

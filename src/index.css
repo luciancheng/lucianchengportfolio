@@ -556,6 +556,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact-info {
@@ -693,7 +694,7 @@ form button:hover {
 }
 
 .footer-nav {
-  margin-left: 300px;
+  margin-left: 30%;
 }
 
 .footer-links a {
