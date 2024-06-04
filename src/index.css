@@ -647,7 +647,8 @@ form button {
   width: 150px;
   text-decoration: none;
   background-image: linear-gradient(to right, #2781bd 0%, rgb(43, 71, 163)  51%, #2781bd  100%);
-  margin: 10px;
+  margin: 10px 0;
+  margin-right: 20%;
   padding: 15px 45px;
   text-align: center;
   transition: 0.3s;
@@ -719,6 +720,26 @@ form button:hover {
   justify-content: space-between;
 }
 
+.form-bottom {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.send-status {
+  font-size: 15px;
+  color: var(--preHover);
+}
+
+.send-success {
+  color: rgba(81, 223, 135, 0.815); 
+}
+
+.send-error {
+  color: rgba(223, 81, 81, 0.815); 
+}
 
 
 /* Responsiveness */

@@ -3,6 +3,8 @@ import { useState } from "react";
 const Contact = () => {
 
     const [inputs, setInputs] = useState({});
+    const [isPending, setIsPending] = useState(false);
+    const [sentProperly, setSentProperly] = useState(0);
 
     const handleChange = (event) => {
         const name = event.target.name;
@@ -11,6 +13,7 @@ const Contact = () => {
     }
 
     const handleSubmit = (event) => {
+        setIsPending(true);
         event.preventDefault();
 
         const scriptURL =
@@ -20,10 +23,15 @@ const Contact = () => {
         const formattedForm = new FormData(form);
 
         fetch(scriptURL, { method: 'POST', body: formattedForm})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message));
-
-        form.reset();
+            .then(response => {
+                console.log('Success!', response);
+                setIsPending(false);
+                setSentProperly(1);
+                form.reset();})
+            .catch(error => {
+                console.error('Error!', error.message)
+                setSentProperly(2);
+                setIsPending(false);});
     }
 
     return ( 
@@ -64,7 +72,13 @@ const Contact = () => {
                         <input type="text" name="Name" placeholder="Your Name" value={inputs.name} onChange={handleChange} required></input>
                         <input type="email" name="Email" placeholder="someone@example.com" required value={inputs.email} onChange={handleChange}></input>
                         <textarea name="Message" rows="6" placeholder="Your Message" value={inputs.message} onChange={handleChange}></textarea>
-                        <button type="submit">Send</button>
+                        <div className="form-bottom">
+                            <button type="submit">Send</button>
+                            {isPending && <div className="send-status send-pending">Sending...</div>}
+                            {sentProperly == 1 && !isPending && <div className="send-status send-success">Sent Successfully!</div>}
+                            {sentProperly == 2 && !isPending && <div className="send-status send-error">Error Sending</div>}
+                        </div>
+
                     </form>
                 </div>
             </div>
