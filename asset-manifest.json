@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lucianchengportfolio/static/css/main.28ea649b.css",
-    "main.js": "/lucianchengportfolio/static/js/main.483267af.js",
+    "main.css": "/lucianchengportfolio/static/css/main.e2a0dbb1.css",
+    "main.js": "/lucianchengportfolio/static/js/main.a9b706d7.js",
     "static/js/453.7a596578.chunk.js": "/lucianchengportfolio/static/js/453.7a596578.chunk.js",
     "static/media/pacemaker.jpg": "/lucianchengportfolio/static/media/pacemaker.d8aac3b05227f902e4de.jpg",
     "static/media/nadinamachina.jpg": "/lucianchengportfolio/static/media/nadinamachina.0b2733c30e2c1871d0f2.jpg",
@@ -12,12 +12,12 @@
     "static/media/webdev.jpg": "/lucianchengportfolio/static/media/webdev.07bb2101605a07655d9a.jpg",
     "static/media/cartcenter.png": "/lucianchengportfolio/static/media/cartcenter.d513dcde3a0c83194459.png",
     "index.html": "/lucianchengportfolio/index.html",
-    "main.28ea649b.css.map": "/lucianchengportfolio/static/css/main.28ea649b.css.map",
-    "main.483267af.js.map": "/lucianchengportfolio/static/js/main.483267af.js.map",
+    "main.e2a0dbb1.css.map": "/lucianchengportfolio/static/css/main.e2a0dbb1.css.map",
+    "main.a9b706d7.js.map": "/lucianchengportfolio/static/js/main.a9b706d7.js.map",
     "453.7a596578.chunk.js.map": "/lucianchengportfolio/static/js/453.7a596578.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28ea649b.css",
-    "static/js/main.483267af.js"
+    "static/css/main.e2a0dbb1.css",
+    "static/js/main.a9b706d7.js"
   ]
 }
