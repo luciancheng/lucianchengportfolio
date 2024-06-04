@@ -218,13 +218,30 @@ body {
 .hidden-header {
   transform: translateY(50px);
   filter: blur(5px);
-  transition: all 1s;
+}
+
+.hidden-delayed {
+  transform: translateX(-100%);
+  filter: blur(5px);
+  transition: all 2s;
 }
 
 .show {
   opacity: 1;
   transform: translate(0, 0);
   filter: blur(0);
+}
+
+.about-background-info-skill-container:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.about-background-info-skill-container:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.about-background-info-skill-container:nth-child(4) {
+  transition-delay: 400ms;
 }
 
 @media(prefers-reduced-motion) {
@@ -471,6 +488,12 @@ h2 {
   color: var(--textColor2);
 }
 
+.about-background-info-skill-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
 
 .about-background-info-skill {
   display: flex;

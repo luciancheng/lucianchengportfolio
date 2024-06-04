@@ -39,32 +39,32 @@ const About = () => {
                         for small and large scale projects. Thgouth my experiences, I transform concepts into reality using software, machine learning, and 
                         core engineering principles, shaping innovative solutions.
                     </p>
+                    <div className="about-background-info-skill-container hidden">
+                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                            <div className="skill-image">
+                                <i className="fa-solid fa-bolt"></i>
+                            </div>
+                            <div className="skill-description">Embedded Systems Development and Design</div>
+                        </div>
 
-                    <div className="about-background-info-skill frosted-glass">
-                        <div className="skill-image">
-                            <i className="fa-solid fa-bolt"></i>
+                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                            <div className="skill-image">
+                                <i className="fa-solid fa-dna"></i>
+                            </div>
+                            <div className="skill-description">End-to-End Biomedical Device Creation</div>
                         </div>
-                        <div className="skill-description">Embedded Systems Development and Design</div>
-
-                    </div>
-
-                    <div className="about-background-info-skill frosted-glass">
-                        <div className="skill-image">
-                            <i className="fa-solid fa-dna"></i>
+                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                            <div className="skill-image">
+                                <i className="fa-solid fa-robot"></i>
+                            </div>
+                            <div className="skill-description">Machine Learning Pipeline and Deployment</div>
                         </div>
-                        <div className="skill-description">End-to-End Biomedical Device Creation</div>
-                    </div>
-                    <div className="about-background-info-skill frosted-glass">
-                        <div className="skill-image">
-                            <i className="fa-solid fa-robot"></i>
+                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                            <div className="skill-image">
+                                <i className="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <div className="skill-description">Full-stack Application Development</div>
                         </div>
-                        <div className="skill-description">Machine Learning Pipeline and Deployment</div>
-                    </div>
-                    <div className="about-background-info-skill frosted-glass">
-                        <div className="skill-image">
-                            <i className="fa-solid fa-diagram-project"></i>
-                        </div>
-                        <div className="skill-description">Full-stack Application Development</div>
                     </div>
                 </div>
             </div>
