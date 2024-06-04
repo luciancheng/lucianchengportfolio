@@ -210,6 +210,21 @@ body {
   opacity: 0.6;
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 
 /* app begin */
 

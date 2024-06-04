@@ -1,15 +1,31 @@
 import TechstackSection from "./techstackSection";
+import { useEffect } from 'react';
 
 const About = () => {
     const techstack = [
         {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js"], id: 1},
         {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "aws", "figma", "git", "github", "gitlab", "vscode"], id: 2}
     ];
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.map((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            })
+        })
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    });
     return ( 
         <div className="about" id="about">
             <h2>About</h2>
             <div className="seperator"></div>
-            <div className="about-background-div">
+            <div className="about-background-div hidden">
                 <div className="about-background-info">
                     <h3>What I Do</h3>
                     <p>
@@ -50,7 +66,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="about-techstack-container">
+            <div className="about-techstack-container hidden">
                 <h3>My Tech Stack</h3>
                 <div className="techstack-section-container">
                     {techstack.map((tech) => (

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
 
@@ -24,21 +24,34 @@ const Contact = () => {
 
         fetch(scriptURL, { method: 'POST', body: formattedForm})
             .then(response => {
-                console.log('Success!', response);
                 setIsPending(false);
                 setSentProperly(1);
                 form.reset();})
             .catch(error => {
-                console.error('Error!', error.message)
                 setSentProperly(2);
                 setIsPending(false);});
     }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.map((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            })
+        })
+    
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    });
 
     return ( 
         <div className="contact" id="contact">
             <h2>Contact</h2>
             <div className="seperator"></div>
-            <div className="contact-container">
+            <div className="contact-container hidden">
                 <div className="contact-info">
                     <h3>Let's Connect!</h3>
                     <div className="contact-socials-container">
