@@ -23,8 +23,10 @@ const About = () => {
     });
     return ( 
         <div className="about" id="about">
-            <h2>About</h2>
-            <div className="seperator"></div>
+            <div className="hidden hidden-header">
+                <h2>About</h2>
+                <div className="seperator"></div>
+            </div>
             <div className="about-background-div hidden">
                 <div className="about-background-info">
                     <h3>What I Do</h3>

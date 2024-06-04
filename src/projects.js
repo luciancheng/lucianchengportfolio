@@ -36,8 +36,10 @@ const Projects = () => {
 
     return ( 
         <div className="projects" id="projects">
-            <h2>Projects</h2>
-            <div className="seperator"></div>
+            <div className="hidden hidden-header">
+                <h2>Projects</h2>
+                <div className="seperator"></div>
+            </div>
             <div className="projects-container hidden">
                 {projects.map((proj) => (
                     <ProjectTemplate project={proj} key={proj.id}/>

@@ -26,8 +26,10 @@ useEffect(() => {
     
     return ( 
         <div className="experience" id="experience">
-            <h2>Experience</h2>
-            <div className="seperator"></div>
+            <div className="hidden hidden-header">
+                <h2>Experience</h2>
+                <div className="seperator"></div>
+            </div>
             <div className="timeline hidden">
                 {experiences.map((exp) => (
                     <TimelineContainer experience={exp} key={exp.id}/>

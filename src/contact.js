@@ -49,8 +49,10 @@ const Contact = () => {
 
     return ( 
         <div className="contact" id="contact">
-            <h2>Contact</h2>
-            <div className="seperator"></div>
+            <div className="hidden hidden-header">
+                <h2>Contact</h2>
+                <div className="seperator"></div>
+            </div>
             <div className="contact-container hidden">
                 <div className="contact-info">
                     <h3>Let's Connect!</h3>
