@@ -31,8 +31,8 @@ const Contact = () => {
                 setSentProperly(2);
                 setIsPending(false);});
     }
-
-    useEffect(() => {
+    
+    /*useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.map((entry) => {
                 if (entry.isIntersecting) {
@@ -45,7 +45,7 @@ const Contact = () => {
     
         const hiddenElements = document.querySelectorAll('.hidden');
         hiddenElements.forEach((el) => observer.observe(el));
-    });
+    });*/
 
     return ( 
         <div className="contact" id="contact">

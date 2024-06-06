@@ -18,8 +18,8 @@ const Projects = () => {
         {title: "Genetic Programming Cart", desc: "Implementation of cross generational program self mutations to achieve the best equation for solving the cart centering problem using binary trees.", skills: ["cpp"], links: "https://github.com/luciancheng/Cpp-Projects/tree/main/genetic_programming", img: cart, id: 5},
         {title: "Arm Exerciser Device", desc: "Developed a device for my patient with multiple sclerosis to help her regain functionality in her arm by implementing an app that communicates with sensors and actuators.", skills: ["python"], links: "https://github.com/luciancheng/Python-Projects/tree/main/Design%20Projects/Design%20Project%204%3A%20Nadina%20Machina", img: nadinamachina, id: 6}
     ]
-
-    useEffect(() => {
+    
+    /*useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.map((entry) => {
                 if (entry.isIntersecting) {
@@ -32,7 +32,7 @@ const Projects = () => {
     
         const hiddenElements = document.querySelectorAll('.hidden');
         hiddenElements.forEach((el) => observer.observe(el));
-    });
+    });*/
 
     return ( 
         <div className="projects" id="projects">
