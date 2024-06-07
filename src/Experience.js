@@ -9,7 +9,7 @@ const Experience = () => {
 {company: "McMaster University", position: "B.Eng.BME Mechatronics & Biomedical Engineering", time: "September 2021 - Present", desc: "Studying Mechatronics and Biomedical Engineering, developing a strong multidisciplinary background in software, electrical, mechanical, and biomedical engineering, Using proper engineering practices and economic analysis to create projects individually and in groups.", skills: ["python", "cpp", "c", "autodesk"], side: "left",  id: 5},
 ];
 
-/*useEffect(() => {
+useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
         entries.map((entry) => {
             if (entry.isIntersecting) {
@@ -22,7 +22,7 @@ const Experience = () => {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
-});*/
+});
     
     return ( 
         <div className="experience" id="experience">

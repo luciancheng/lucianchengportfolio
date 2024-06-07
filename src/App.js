@@ -10,6 +10,10 @@ function App() {
   return (
     <div className="App">
         <div className="background-div">
+          <div className="circle g1"></div>
+          <div className="circle g2"></div>
+          <div className="circle g3"></div>
+          <div className="circle g4"></div>
         </div>
         <Navbar/>
         <Intro/>

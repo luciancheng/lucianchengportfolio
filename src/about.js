@@ -6,21 +6,7 @@ const About = () => {
         {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js"], id: 1},
         {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "nodejs", "expressjs", "aws", "figma", "git", "github", "gitlab", "vscode"], id: 2}
     ];
-    
-    /*useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.map((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                } else {
-                    entry.target.classList.remove('show');
-                }
-            })
-        })
 
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
-    });*/
     return ( 
         <div className="about" id="about">
             <div className="hidden hidden-header">
