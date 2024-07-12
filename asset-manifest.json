@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lucianchengportfolio/static/css/main.8152a897.css",
+    "main.css": "/lucianchengportfolio/static/css/main.26ba2f98.css",
     "main.js": "/lucianchengportfolio/static/js/main.1cb1617d.js",
     "static/js/453.7a596578.chunk.js": "/lucianchengportfolio/static/js/453.7a596578.chunk.js",
     "static/media/pacemaker.jpg": "/lucianchengportfolio/static/media/pacemaker.d8aac3b05227f902e4de.jpg",
@@ -12,12 +12,12 @@
     "static/media/webdev.jpg": "/lucianchengportfolio/static/media/webdev.07bb2101605a07655d9a.jpg",
     "static/media/cartcenter.png": "/lucianchengportfolio/static/media/cartcenter.d513dcde3a0c83194459.png",
     "index.html": "/lucianchengportfolio/index.html",
-    "main.8152a897.css.map": "/lucianchengportfolio/static/css/main.8152a897.css.map",
+    "main.26ba2f98.css.map": "/lucianchengportfolio/static/css/main.26ba2f98.css.map",
     "main.1cb1617d.js.map": "/lucianchengportfolio/static/js/main.1cb1617d.js.map",
     "453.7a596578.chunk.js.map": "/lucianchengportfolio/static/js/453.7a596578.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8152a897.css",
+    "static/css/main.26ba2f98.css",
     "static/js/main.1cb1617d.js"
   ]
 }
