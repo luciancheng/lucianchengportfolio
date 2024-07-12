@@ -668,7 +668,7 @@ h2 {
 }
 
 .project-dock {
-  height: 500px;
+  height: 550px;
   width: 400px;
   margin: 20px;
   text-decoration: none;
@@ -692,7 +692,7 @@ h2 {
   text-align: center;
   font-size: 16px;
   color: var(--preHover);
-  height: 75px;
+  height: 110px;
   margin: 8px 20px;
 }
 
@@ -935,37 +935,10 @@ form button:hover {
 
 /* Responsiveness */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1900px) {
   .App {
-    max-width: 100%;
+    max-width: 95%;
   }
-  .timeline{
-    margin: 50px auto;
-  }
-
-  .timeline::after {
-    left: 31px;
-  }
-
-  .timeline-container {
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-  }
-
-  .right-container {
-    left: 0;
-  }
-
-  .left-container .dot, .right-container .dot {
-    left: 11px;
-  }
-
-  .intro .intro-greeting {
-    font-size: 60px;
-    --typeWriterWidth: 440px;
-  }
-
 }
 
 @media screen and (max-width: 1700px) {
@@ -989,8 +962,57 @@ form button:hover {
   }
 }
 
-@media screen and (max-width: 1900px) {
-  .App {
-    max-width: 90%;
+@media screen and (max-width: 1000px) {
+  .about-background-info-skill {
+    width: 80%;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .App {
+    max-width: 100%;
+  }
+  .timeline{
+    margin: 50px auto;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0px;
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container .dot, .right-container .dot {
+    left: 11px;
+  }
+
+  .intro .intro-greeting {
+    font-size: 50px;
+    --typeWriterWidth: 340px;
+  }
+
+  .project-dock {
+    width: 500px;
+  }
+
+  .projects {
+    padding: 0px
+  }
+
+  .intro .profile-picture {
+    width: 300px;
+    height: 300px;
+  }
+  .about-background-info-skill {
+    width: 100%;
+  }
+
 }
