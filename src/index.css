@@ -21,6 +21,10 @@
   --blending: hard-light;
 }
 
+svg {
+  display: none;
+}
+
 * {
   margin: 0px;
   font-family: Arimo;
@@ -46,7 +50,7 @@ body {
 
 /* decoration */
 .seperator {
-  background-image: linear-gradient(to right, #2781bd 0%, rgb(43, 71, 163)  100%);
+  background-image: linear-gradient(to right, #2781bd 0%, rgb(43, 71, 163) 100%);
   margin: -10px auto 20px;
   max-width: 6%;
   height: 3px;
@@ -128,7 +132,7 @@ body {
 
 .g1 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 60%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
@@ -145,7 +149,7 @@ body {
 
 .g2 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 60%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
@@ -162,7 +166,7 @@ body {
 
 .g3 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 60%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
@@ -179,7 +183,7 @@ body {
 
 .g4 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 60%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);

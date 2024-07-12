@@ -3,8 +3,9 @@ import { useEffect } from 'react';
 
 const About = () => {
     const techstack = [
-        {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js"], id: 1},
-        {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "nodejs", "expressjs", "aws", "figma", "git", "github", "gitlab", "vscode"], id: 2}
+        {title: "Languages", images: ["python", "cpp", "c", "java", "html", "css", "js", "ts"], id: 1},
+        {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "nodejs", "expressjs", "spring", "aws", "figma", "mysql", "postgresql"], id: 2},
+        {title: "Developer Tools", images: ["git", "github", "gitlab", "vscode"], id: 3}
     ];
 
     return ( 
