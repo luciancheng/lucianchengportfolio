@@ -268,6 +268,7 @@ body {
 .Navbar {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100px;
 }
 
@@ -276,7 +277,7 @@ body {
   z-index: 10;
   margin: 20px 0;
   height: 60px;
-  width: auto;
+  width: 600px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -284,7 +285,7 @@ body {
 .links {
   display: flex;
   height: 100%;
-  width: 600px;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -768,9 +769,6 @@ h2 {
   margin: 20px;
 }
 
-.conact-socials-container {
-  display: flex;
-}
 
 .contact-social {
   display: flex;
@@ -1011,8 +1009,27 @@ form button:hover {
     width: 300px;
     height: 300px;
   }
+
+  .intro {
+    margin: 0% auto;
+  }
+
   .about-background-info-skill {
     width: 100%;
+  }
+  .contact-form {
+    margin: 20px 0;
+  }
+  .seperator {
+    max-width: 12%;
+  }
+
+  .navbar-content-holder {
+    max-width: 95%;
+  }
+
+  .links a {
+    font-size: 14px;
   }
 
 }
