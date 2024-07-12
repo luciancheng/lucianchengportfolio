@@ -344,7 +344,7 @@ body {
   font-size: 100px;
   font-weight: bold;
   border-right: 5px solid rgba(255,255,255,.75);
-  animation: typewriter 1.5s steps(12) 4s 1 normal both, blinkTextCursor 1000ms steps(12) infinite normal;
+  animation: typewriter 1.25s steps(12) 4s 1 normal both, blinkTextCursor 1000ms steps(12) infinite normal;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
