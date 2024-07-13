@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Contact = () => {
 
@@ -62,9 +62,6 @@ const Contact = () => {
                             <a href="https://www.instagram.com/lucian_cheng/" className="contact-socialmedia"  target="_blank" rel="noreferrer">
                                 <i className="fa-2x fa-brands fa-instagram contact-socialmedia-img"></i>
                             </a>
-                            <a href="https://www.facebook.com/profile.php?id=100010696634161" className="contact-socialmedia"  target="_blank" rel="noreferrer">
-                                <i className="fa-2x fa-brands fa-facebook contact-socialmedia-img"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -76,8 +73,8 @@ const Contact = () => {
                         <div className="form-bottom">
                             <button type="submit">Send</button>
                             {isPending && <div className="send-status send-pending">Sending...</div>}
-                            {sentProperly == 1 && !isPending && <div className="send-status send-success">Sent Successfully!</div>}
-                            {sentProperly == 2 && !isPending && <div className="send-status send-error">Error Sending</div>}
+                            {sentProperly === 1 && !isPending && <div className="send-status send-success">Sent Successfully!</div>}
+                            {sentProperly === 2 && !isPending && <div className="send-status send-error">Error Sending</div>}
                         </div>
 
                     </form>

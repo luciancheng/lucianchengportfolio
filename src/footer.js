@@ -18,9 +18,6 @@ const Footer = () => {
                         <a href="https://www.instagram.com/lucian_cheng/" className="contact-socialmedia"  target="_blank" rel="noreferrer">
                             <i className="fa-2x fa-brands fa-instagram contact-socialmedia-img"></i>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=100010696634161" className="contact-socialmedia"  target="_blank" rel="noreferrer">
-                            <i className="fa-2x fa-brands fa-facebook contact-socialmedia-img"></i>
-                        </a>
                     </div>
                 </div>
                 <div className="footer-nav">

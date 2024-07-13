@@ -1,5 +1,4 @@
 import TechstackSection from "./techstackSection";
-import { useEffect } from 'react';
 
 const About = () => {
     const techstack = [
