@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e34e993.css",
-    "main.js": "/static/js/main.dcad4175.js",
+    "main.css": "/static/css/main.2b046b21.css",
+    "main.js": "/static/js/main.d37db95f.js",
     "static/js/453.7a596578.chunk.js": "/static/js/453.7a596578.chunk.js",
     "static/media/pacemaker.jpg": "/static/media/pacemaker.d8aac3b05227f902e4de.jpg",
     "static/media/nadinamachina.jpg": "/static/media/nadinamachina.0b2733c30e2c1871d0f2.jpg",
@@ -12,12 +12,12 @@
     "static/media/webdev.jpg": "/static/media/webdev.07bb2101605a07655d9a.jpg",
     "static/media/cartcenter.png": "/static/media/cartcenter.d513dcde3a0c83194459.png",
     "index.html": "/index.html",
-    "main.5e34e993.css.map": "/static/css/main.5e34e993.css.map",
-    "main.dcad4175.js.map": "/static/js/main.dcad4175.js.map",
+    "main.2b046b21.css.map": "/static/css/main.2b046b21.css.map",
+    "main.d37db95f.js.map": "/static/js/main.d37db95f.js.map",
     "453.7a596578.chunk.js.map": "/static/js/453.7a596578.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e34e993.css",
-    "static/js/main.dcad4175.js"
+    "static/css/main.2b046b21.css",
+    "static/js/main.d37db95f.js"
   ]
 }
