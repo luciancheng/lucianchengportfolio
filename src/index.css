@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
-
 /* base styles */
 
 :root {
@@ -345,8 +344,8 @@ body {
   position: relative;
   font-size: 100px;
   font-weight: bold;
-  border-right: 5px solid rgba(255,255,255,.75);
-  animation: typewriter 1.25s steps(12) 4s 1 normal both, blinkTextCursor 1000ms steps(12) infinite normal;
+  /* border-right: 5px solid rgba(255,255,255,.75); */
+  /* animation: typewriter 1.25s steps(12) 4s 1 normal both, blinkTextCursor 1000ms steps(12) infinite normal; */
   text-align: center;
   white-space: nowrap;
   overflow: hidden;

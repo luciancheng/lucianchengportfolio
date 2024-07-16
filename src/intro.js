@@ -1,14 +1,25 @@
 import Tilt from 'react-parallax-tilt';
 import resume from "./files/LC_resume.pdf";
+import {ReactTyped } from 'react-typed';
 
 const Intro = () => {
     return (  
         <div className="intro">
             <div className="intro-section">
                 <div className="intro-section2">
-                    <div className="intro-greeting">
+                    <ReactTyped 
+                        startWhenVisible
+                        startDelay={4000}
+                        className="intro-greeting"
+                        strings={['Lucian Cheng']}
+                        typeSpeed={100}
+                        backSpeed={0}
+                    />
+                    
+
+                    {/* <div className="intro-greeting">
                         Lucian Cheng
-                    </div>
+                    </div> */}
                     <div className="intro-background">
                         Mechatronics and Biomedical Engineer
                     </div>
