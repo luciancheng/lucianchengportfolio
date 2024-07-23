@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 
 
 // props to pass into the cloud object
-const cloudProps = {
+
+var initialCloudProps  = {
     containerProps: {
       style: {
         display: "flex",
@@ -23,10 +24,11 @@ const cloudProps = {
       tooltip: "native",
       initial: [0.1, -0.1],
       clickToFront: 500,
+      dragControl: true,
       tooltipDelay: 0,
       outlineColour: "#0000",
-      maxSpeed: 0.04,
-      minSpeed: 0.02,
+      maxSpeed: 0.02,
+      minSpeed: 0.01,
       // dragControl: false,
     },
   };
@@ -57,6 +59,29 @@ const useIcons = (slugs) => {
     return <a>Loading</a>
 }
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+}
+  
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+}
+  
+
 const About = () => {
     const techstack = [
         {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js", "ts"], id: 1},
@@ -71,7 +96,22 @@ const About = () => {
         "dotnet", "nginx", "jira", "flask", "matlab", "arduino", "raspberrypi", "arm"
     ]
 
+    
+
     const slugs = useIcons(iconCloudTechstack);
+
+    const {height, width} = useWindowDimensions();
+
+    const updatedCloudProps = {
+        ...initialCloudProps,
+        containerProps: {
+          ...initialCloudProps.containerProps,
+          style: {
+            ...initialCloudProps.containerProps.style,
+            width: width > 700 ? "500px" : "350px",
+          },
+        },
+      };
 
     return ( 
         <div className="about" id="about">
@@ -144,7 +184,7 @@ const About = () => {
                         ))}
                     </div>
 
-                    <Cloud {...cloudProps}className="icon-cloud">
+                    <Cloud {...updatedCloudProps} className="icon-cloud">
                         {slugs}
                     </Cloud>
                 </div>

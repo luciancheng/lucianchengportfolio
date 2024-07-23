@@ -77,6 +77,24 @@ body {
   background: linear-gradient(to right bottom, #2781bdbb, #2781bd36)
 }
 
+/* .border-beam {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.border-beam::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: red;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -10;
+} */
+
 
 .frosted-glass {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
@@ -92,6 +110,18 @@ body {
   border-top: 2px solid rgba(225, 225, 225, 0.2);
   border-right: 2px solid rgba(225, 225, 225, 0.1);
 }
+
+/* .frosted-glass::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(160, 0, 139);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+}  */
 
 @keyframes moveInCircle {
   0% {
@@ -608,7 +638,6 @@ h2 {
   align-items: center;
 }
 
-
 /* experience */
 
 .experience {
@@ -1012,6 +1041,26 @@ form button:hover {
 @media screen and (max-width: 1000px) {
   .about-background-info-skill {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-flexbox {
+    flex-wrap: wrap;
+  }
+  .about-flexbox h4 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(4, 250px);
+  }
+
+  .icon-cloud {
+    width: 400px;
   }
 }
 
