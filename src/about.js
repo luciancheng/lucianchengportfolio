@@ -1,4 +1,59 @@
 import TechstackSection from "./techstackSection";
+import {Cloud, renderSimpleIcon, fetchSimpleIcons, SimpleIcon, ICloud} from 'react-icon-cloud'
+import { useState, useEffect, useMemo } from "react";
+
+const cloudProps = {
+    containerProps: {
+      style: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        paddingTop: 40,
+      },
+    },
+    options: {
+      reverse: true,
+      depth: 1,
+      wheelZoom: false,
+      imageScale: 2,
+      activeCursor: "default",
+      tooltip: "native",
+      initial: [0.1, -0.1],
+      clickToFront: 500,
+      tooltipDelay: 0,
+      outlineColour: "#0000",
+      maxSpeed: 0.04,
+      minSpeed: 0.02,
+      // dragControl: false,
+    },
+  };
+
+const useIcons = (slugs) => {
+    const [icons, setIcons] = useState()
+    useEffect(() => {fetchSimpleIcons({slugs}).then(setIcons)}, [])
+    const bgHex = "#f3f2ef";
+    const fallbackHex = "#6e6e73";
+    const minContrastRatio = 1.2;
+  
+    if (icons) {
+      return Object.values(icons.simpleIcons).map((icon) => renderSimpleIcon({
+        icon,
+        bgHex,
+        fallbackHex,
+        minContrastRatio,
+        size: 42,
+        aProps: {
+            href: undefined,
+            target: undefined,
+            rel: undefined,
+            onClick: (e) => e.preventDefault(),
+        },
+      }))
+    }
+    
+    return <a>Loading</a>
+}
 
 const About = () => {
     const techstack = [
@@ -6,6 +61,15 @@ const About = () => {
         {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "nodejs", "expressjs", "spring", "aws", "gcd", "figma", "mysql", "postgresql"], id: 2},
         {title: "Developer Tools", images: ["git", "github", "gitlab", "vscode"], id: 3}
     ];
+
+    const iconCloudTechstack = [
+        "typescript", "javascript", "python", "cplusplus", "c", "csharp", "html5", "css3", "java",
+        "pytorch", "numpy", "pandas", "react", "tailwindcss", "mongodb", "nodedotjs", "express", "spring",
+        "amazonaws", "googlecloud", "figma", "mysql", "postgresql", "git", "github", "visualstudiocode", "gitlab",
+        "dotnet", "nginx", "jira"
+    ]
+
+    const slugs = useIcons(iconCloudTechstack);
 
     return ( 
         <div className="about" id="about">
@@ -61,6 +125,10 @@ const About = () => {
                         <TechstackSection techstack={tech} key={tech.id}/>
                     ))}
                 </div>
+
+                <Cloud {...cloudProps}className="icon-cloud">
+                    {slugs}
+                </Cloud>
             </div>
         </div>
      );
