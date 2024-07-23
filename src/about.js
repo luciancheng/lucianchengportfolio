@@ -93,7 +93,8 @@ const About = () => {
         "typescript", "javascript", "python", "cplusplus", "c", "csharp", "html5", "css3", "java",
         "pytorch", "numpy", "pandas", "react", "tailwindcss", "mongodb", "nodedotjs", "express", "spring",
         "amazonaws", "googlecloud", "figma", "mysql", "postgresql", "git", "github", "visualstudiocode", "gitlab",
-        "dotnet", "nginx", "jira", "flask", "matlab", "arduino", "raspberrypi", "arm"
+        "dotnet", "nginx", "jira", "flask", "matlab", "arduino", "raspberrypi", "arm", "swift", "linux", "windows",
+        "macos"
     ]
 
     
@@ -137,13 +138,13 @@ const About = () => {
                                 I especially love working with complex software, to develop full-stack applications which allow me to use all of my skills and experiences in embedded systems, healthcare, and machine learning, shaping innovative solutions.
                             </div>
                             <div className="about-paragraph">
-                                Working in teams and idividually are where I strive the most, being able to communicate and brainstorm activies, leading to a more efficient development process for small and large scale projects.
+                                Working in teams and individually are where I strive the most, being able to communicate and brainstorm ideas, leading to a more efficient development process for small and large scale projects.
                             </div>
             
                         </div>
                         
                         <div className="about-grid">
-                            <div className="about-grid__item about-grid__item--1 frosted-glass border-beam">
+                            <div className="about-grid__item about-grid__item--1 frosted-glass">
                                 <div className="skill-image">
                                     <i className="fa-solid fa-bolt"></i>
                                 </div>
