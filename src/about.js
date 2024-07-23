@@ -80,20 +80,30 @@ const About = () => {
                 <div className="seperator"></div>
             </div>
             <div className="about-background-div hidden">
-                <div className="about-background-info">
+                <div className="about-background-info hidden">
                     <h3>What I Do</h3>
                     <div className="about-flexbox">
-                        <p>
-                            Hi, I'm Lucian, a fourth-year mechatronics and biomedical 
-                            engineering student at McMaster University in Hamilton, Ontario.
-                            As a passionate engineer, I strive to innovate and develop solutions to common problems that impact a large population.
-                            I enjoy using my multidisciplinary skills in software, electrical, mechanical, and biomedical engineering to create projects from end-to-end development.
-                            Working in teams and idividually are where I strive the most, being able to communicate and brainstorm activies, leading to a more efficient development process
-                            for small and large scale projects. Thgouth my experiences, I transform concepts into reality using software, machine learning, and 
-                            core engineering principles, shaping innovative solutions.
-                        </p>
+                        <div>
+                            <h4>Hi, I'm <span className="about-animatedname">Lucian</span></h4>
+                            <div className="about-paragraph">
+                                I'm a fourth-year mechatronics and biomedical 
+                                engineering student at McMaster University in Hamilton, Ontario.
+                            </div>
+                            <div className="about-paragraph">
+                                As a passionate engineer, I strive to innovate and develop solutions to common problems that impact a large population.
+                                I enjoy using my multidisciplinary skills in software, electrical, mechanical, and biomedical engineering to create projects from end-to-end development.
+                            </div>
+                            <div className="about-paragraph">
+                                I especially love working with complex software, to develop full-stack applications which allow me to use all of my skills and experiences in embedded systems, healthcare, and machine learning, shaping innovative solutions.
+                            </div>
+                            <div className="about-paragraph">
+                                Working in teams and idividually are where I strive the most, being able to communicate and brainstorm activies, leading to a more efficient development process for small and large scale projects.
+                            </div>
+            
+                        </div>
+                        
                         <div className="about-grid">
-                            <div className="about-grid__item about-grid__item--1 frosted-glass">
+                            <div className="about-grid__item about-grid__item--1 frosted-glass border-beam">
                                 <div className="skill-image">
                                     <i className="fa-solid fa-bolt"></i>
                                 </div>
@@ -122,33 +132,6 @@ const About = () => {
                             </div>
 
                         </div>
-                        {/* <div className="about-background-info-skill-container">
-                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                                <div className="skill-image">
-                                    <i className="fa-solid fa-bolt"></i>
-                                </div>
-                                <div className="skill-description">Embedded Systems Development and Design</div>
-                            </div>
-
-                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                                <div className="skill-image">
-                                    <i className="fa-solid fa-dna"></i>
-                                </div>
-                                <div className="skill-description">End-to-End Biomedical Device Creation</div>
-                            </div>
-                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                                <div className="skill-image">
-                                    <i className="fa-solid fa-robot"></i>
-                                </div>
-                                <div className="skill-description">Machine Learning Pipeline and Deployment</div>
-                            </div>
-                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                                <div className="skill-image">
-                                    <i className="fa-solid fa-diagram-project"></i>
-                                </div>
-                                <div className="skill-description">Full-stack Application Development</div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
