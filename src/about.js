@@ -1,14 +1,16 @@
 import TechstackSection from "./techstackSection";
-import {Cloud, renderSimpleIcon, fetchSimpleIcons, SimpleIcon, ICloud} from 'react-icon-cloud'
-import { useState, useEffect, useMemo } from "react";
+import {Cloud, renderSimpleIcon, fetchSimpleIcons } from 'react-icon-cloud'
+import { useState, useEffect } from "react";
 
+
+// props to pass into the cloud object
 const cloudProps = {
     containerProps: {
       style: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "100%",
+        width: "500px",
         paddingTop: 40,
       },
     },
@@ -57,16 +59,16 @@ const useIcons = (slugs) => {
 
 const About = () => {
     const techstack = [
-        {title: "Languages", images: ["python", "cpp", "c", "java", "csharp", "html", "css", "js", "ts"], id: 1},
-        {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "nodejs", "expressjs", "spring", "aws", "gcd", "figma", "mysql", "postgresql"], id: 2},
-        {title: "Developer Tools", images: ["git", "github", "gitlab", "vscode"], id: 3}
+        {title: "Languages", images: ["python", "cpp", "c", "csharp", "html", "css", "js", "ts"], id: 1},
+        {title: "Frameworks, Libraries and Technologies", images: ["pytorch", "react", "tailwind", "mongodb", "nodejs", "expressjs", "mysql", "postgresql"], id: 2},
+        {title: "Developer Tools", images: ["git", "github", "gitlab", "vscode", "aws", "gcd", "figma"], id: 3}
     ];
 
     const iconCloudTechstack = [
         "typescript", "javascript", "python", "cplusplus", "c", "csharp", "html5", "css3", "java",
         "pytorch", "numpy", "pandas", "react", "tailwindcss", "mongodb", "nodedotjs", "express", "spring",
         "amazonaws", "googlecloud", "figma", "mysql", "postgresql", "git", "github", "visualstudiocode", "gitlab",
-        "dotnet", "nginx", "jira"
+        "dotnet", "nginx", "jira", "flask", "matlab", "arduino", "raspberrypi", "arm"
     ]
 
     const slugs = useIcons(iconCloudTechstack);
@@ -80,55 +82,90 @@ const About = () => {
             <div className="about-background-div hidden">
                 <div className="about-background-info">
                     <h3>What I Do</h3>
-                    <p>
-                        Hi, I'm Lucian, a fourth-year mechatronics and biomedical 
-                        engineering student at McMaster University in Hamilton, Ontario.
-                        As a passionate engineer, I strive to innovate and develop solutions to common problems that impact a large population.
-                        I enjoy using my multidisciplinary skills in software, electrical, mechanical, and biomedical engineering to create projects from end-to-end development.
-                        Working in teams and idividually are where I strive the most, being able to communicate and brainstorm activies, leading to a more efficient development process
-                        for small and large scale projects. Thgouth my experiences, I transform concepts into reality using software, machine learning, and 
-                        core engineering principles, shaping innovative solutions.
-                    </p>
-                    <div className="about-background-info-skill-container hidden">
-                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                            <div className="skill-image">
-                                <i className="fa-solid fa-bolt"></i>
+                    <div className="about-flexbox">
+                        <p>
+                            Hi, I'm Lucian, a fourth-year mechatronics and biomedical 
+                            engineering student at McMaster University in Hamilton, Ontario.
+                            As a passionate engineer, I strive to innovate and develop solutions to common problems that impact a large population.
+                            I enjoy using my multidisciplinary skills in software, electrical, mechanical, and biomedical engineering to create projects from end-to-end development.
+                            Working in teams and idividually are where I strive the most, being able to communicate and brainstorm activies, leading to a more efficient development process
+                            for small and large scale projects. Thgouth my experiences, I transform concepts into reality using software, machine learning, and 
+                            core engineering principles, shaping innovative solutions.
+                        </p>
+                        <div className="about-grid">
+                            <div className="about-grid__item about-grid__item--1 frosted-glass">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-bolt"></i>
+                                </div>
+                                <div className="skill-description">Embedded Systems Development and Design</div>
                             </div>
-                            <div className="skill-description">Embedded Systems Development and Design</div>
-                        </div>
 
-                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                            <div className="skill-image">
-                                <i className="fa-solid fa-dna"></i>
+                            <div className="about-grid__item about-grid__item--2 frosted-glass">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-dna"></i>
+                                </div>
+                                <div className="skill-description">End-to-End Biomedical Device Creation</div>
                             </div>
-                            <div className="skill-description">End-to-End Biomedical Device Creation</div>
-                        </div>
-                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                            <div className="skill-image">
-                                <i className="fa-solid fa-robot"></i>
+
+                            <div className="about-grid__item about-grid__item--3 frosted-glass">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-robot"></i>
+                                </div>
+                                <div className="skill-description">Machine Learning Pipeline and Deployment</div>
                             </div>
-                            <div className="skill-description">Machine Learning Pipeline and Deployment</div>
-                        </div>
-                        <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
-                            <div className="skill-image">
-                                <i className="fa-solid fa-diagram-project"></i>
+
+                            <div className="about-grid__item about-grid__item--4 frosted-glass">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-diagram-project"></i>
+                                </div>
+                                <div className="skill-description">Full-stack Application Development</div>
                             </div>
-                            <div className="skill-description">Full-stack Application Development</div>
+
                         </div>
+                        {/* <div className="about-background-info-skill-container">
+                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-bolt"></i>
+                                </div>
+                                <div className="skill-description">Embedded Systems Development and Design</div>
+                            </div>
+
+                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-dna"></i>
+                                </div>
+                                <div className="skill-description">End-to-End Biomedical Device Creation</div>
+                            </div>
+                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-robot"></i>
+                                </div>
+                                <div className="skill-description">Machine Learning Pipeline and Deployment</div>
+                            </div>
+                            <div className="about-background-info-skill frosted-glass hidden hidden-delayed">
+                                <div className="skill-image">
+                                    <i className="fa-solid fa-diagram-project"></i>
+                                </div>
+                                <div className="skill-description">Full-stack Application Development</div>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
             <div className="about-techstack-container hidden">
                 <h3>My Tech Stack</h3>
-                <div className="techstack-section-container">
-                    {techstack.map((tech) => (
-                        <TechstackSection techstack={tech} key={tech.id}/>
-                    ))}
-                </div>
+                <div className="techstack-flexbox">
+                    <div className="techstack-section-container">
+                        {techstack.map((tech) => (
+                            <TechstackSection techstack={tech} key={tech.id}/>
+                        ))}
+                    </div>
 
-                <Cloud {...cloudProps}className="icon-cloud">
-                    {slugs}
-                </Cloud>
+                    <Cloud {...cloudProps}className="icon-cloud">
+                        {slugs}
+                    </Cloud>
+                </div>
+                
             </div>
         </div>
      );

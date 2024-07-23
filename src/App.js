@@ -5,8 +5,43 @@ import Experience from "./Experience";
 import Projects from "./projects";
 import Contact from "./contact";
 import Footer from "./footer";
+import React from 'react';
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const interBubble = document.querySelector('.interactive');
+    if (!interBubble) {
+      console.error("Interactive element not found");
+      return;
+    }
+
+    let curX = 0;
+    let curY = 0;
+    let tgX = 0;
+    let tgY = 0;
+
+    function move() {
+      curX += (tgX - curX);
+      curY += (tgY - curY);
+      interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
+      requestAnimationFrame(move);
+    }
+
+    function handleMouseMove(event) {
+      tgX = event.clientX;
+      tgY = event.clientY;
+    }
+
+    window.addEventListener('mousemove', handleMouseMove);
+    move();
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+
   return (
     <div className="App">
         <div className="background-div">
@@ -26,6 +61,7 @@ function App() {
             <div className="circle g2"></div>
             <div className="circle g3"></div>
             <div className="circle g4"></div>
+            <div className="interactive"></div>
           </div>
         
         </div>
