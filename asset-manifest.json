@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.4379576b.css",
-    "main.js": "/static/js/main.3e0865a8.js",
-    "static/js/453.7a596578.chunk.js": "/static/js/453.7a596578.chunk.js",
-    "static/media/pacemaker.jpg": "/static/media/pacemaker.d8aac3b05227f902e4de.jpg",
-    "static/media/nadinamachina.jpg": "/static/media/nadinamachina.0b2733c30e2c1871d0f2.jpg",
-    "static/media/LucianCheng.jpg": "/static/media/LucianCheng.bedf669eb4e4d09a1efc.jpg",
-    "static/media/dimplecircuit.png": "/static/media/dimplecircuit.e5da8bdf8830c83c9567.png",
-    "static/media/embeddedsystem.png": "/static/media/embeddedsystem.6a907cd6b6b1d3d26551.png",
-    "static/media/LC_resume.pdf": "/static/media/LC_resume.dfa0d34f02daee2ae662.pdf",
-    "static/media/webdev.jpg": "/static/media/webdev.07bb2101605a07655d9a.jpg",
-    "static/media/cartcenter.png": "/static/media/cartcenter.d513dcde3a0c83194459.png",
-    "index.html": "/index.html",
-    "main.4379576b.css.map": "/static/css/main.4379576b.css.map",
-    "main.3e0865a8.js.map": "/static/js/main.3e0865a8.js.map",
-    "453.7a596578.chunk.js.map": "/static/js/453.7a596578.chunk.js.map"
+    "main.css": "/lucianchengportfolio/static/css/main.818a7649.css",
+    "main.js": "/lucianchengportfolio/static/js/main.099b3c8b.js",
+    "static/js/453.7a596578.chunk.js": "/lucianchengportfolio/static/js/453.7a596578.chunk.js",
+    "static/media/pacemaker.jpg": "/lucianchengportfolio/static/media/pacemaker.d8aac3b05227f902e4de.jpg",
+    "static/media/nadinamachina.jpg": "/lucianchengportfolio/static/media/nadinamachina.0b2733c30e2c1871d0f2.jpg",
+    "static/media/LucianCheng.jpg": "/lucianchengportfolio/static/media/LucianCheng.bedf669eb4e4d09a1efc.jpg",
+    "static/media/dimplecircuit.png": "/lucianchengportfolio/static/media/dimplecircuit.e5da8bdf8830c83c9567.png",
+    "static/media/embeddedsystem.png": "/lucianchengportfolio/static/media/embeddedsystem.6a907cd6b6b1d3d26551.png",
+    "static/media/LC_resume.pdf": "/lucianchengportfolio/static/media/LC_resume.dfa0d34f02daee2ae662.pdf",
+    "static/media/webdev.jpg": "/lucianchengportfolio/static/media/webdev.07bb2101605a07655d9a.jpg",
+    "static/media/cartcenter.png": "/lucianchengportfolio/static/media/cartcenter.d513dcde3a0c83194459.png",
+    "index.html": "/lucianchengportfolio/index.html",
+    "main.818a7649.css.map": "/lucianchengportfolio/static/css/main.818a7649.css.map",
+    "main.099b3c8b.js.map": "/lucianchengportfolio/static/js/main.099b3c8b.js.map",
+    "453.7a596578.chunk.js.map": "/lucianchengportfolio/static/js/453.7a596578.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4379576b.css",
-    "static/js/main.3e0865a8.js"
+    "static/css/main.818a7649.css",
+    "static/js/main.099b3c8b.js"
   ]
 }
